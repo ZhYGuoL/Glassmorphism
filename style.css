@@ -1,0 +1,28 @@
+.index::-webkit-scrollbar {
+    display: none;
+}
+
+/* centre div "panel" */
+.panel {
+    position: absolute;
+    /* center div */
+    top: 50%;
+    left: 50%;
+    /* transform to center div */
+    transform: translate(-50%, -50%);
+    /* width and height */
+    width: 90%;
+    height: 80%;
+    /* glassmorphism */
+    background: rgba(255, 255, 255, 0.5);
+    /* border radius */
+    border-radius: 10px;
+    /* box shadow */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    /* transition */
+    transition: 0.5s;
+    /* semi transparent */
+    opacity: 0.5;
+    overflow: hidden;
+    z-index: 100;
+}
