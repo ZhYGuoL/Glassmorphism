@@ -1,13 +1,13 @@
-.index::-webkit-scrollbar {
+/* .index::-webkit-scrollbar {
     display: none;
-}
+} */
 
 body {
     background-image: url('wallpaper7.jpg');
     background-position: center;
     font-family: 'Inter', sans-serif;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
     object-fit: contain;
 
 }
