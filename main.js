@@ -62,6 +62,15 @@
 // animate();
 
 
+function parentWidth(elem) {
+    return elem.clientWidth;
+}
+function parentHeight(elem) {
+    return elem.clientHeight;
+}
+
+
+
 
 let Mesh;
 let light;
@@ -69,9 +78,11 @@ let light;
 const globe = document.getElementById('globe');
 
 const renderer = new THREE.WebGLRenderer( {antialias: true} );
-renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setSize(document.getElementById('globe').clientWidth, document.getElementById('globe').clientHeight);
 globe.appendChild(renderer.domElement);
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+// make background of scene transparent
+renderer.setClearColor(0x000000, 0);
+const camera = new THREE.PerspectiveCamera(75, parentWidth(document.getElementById('globe')) / parentHeight(document.getElementById('globe')), 0.1, 1000);
 const scene = new THREE.Scene();
 camera.position.set(5, 0, 0);
 
@@ -80,14 +91,14 @@ camera.position.set(5, 0, 0);
         scene.add(light);
     }
     const dirLight1 = new THREE.DirectionalLight( 0xffffff );
-        dirLight1.position.set( 2, 1, 2 );
+        dirLight1.position.set( 2, 2, 2 );
         scene.add( dirLight1 );
 
     let balloonLoader = new THREE.GLTFLoader();
 
     balloonLoader.load('/Earth.gltf', (gltf) => {
         Mesh = gltf.scene;
-        Mesh.scale.set(1, 1, 1);
+        Mesh.scale.set(2.5, 2.5, 2.5);
         scene.add(Mesh);
         Mesh.position.x = 0;
         Mesh.position.y = 0;
@@ -107,6 +118,8 @@ camera.position.set(5, 0, 0);
     const controls = new THREE.OrbitControls( camera, renderer.domElement );
     controls.listenToKeyEvents(document.body);
     controls.enableDampening = true
+    // disable zooming in threejs orbit controls
+    controls.enableZoom = false;
 
     controls.update();
     

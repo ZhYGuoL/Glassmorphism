@@ -4,7 +4,7 @@ body {
 
 .background {
     background-repeat: no-repeat;
-    background-image: url('wallpaper7.jpg');
+    background-image: url('wallpaper6.jpg');
     
     background-position: center;
     height: 2160px;
@@ -37,8 +37,8 @@ body {
     grid-area: 1 / 1 / 6 / 2;
 }
 
-.globe {
-    grid-area: 1 / 2 / 6 / 3;
+#globe {
+    grid-area: 1 / 2 / 4 / 3; 
 }
 
 .card-title {
