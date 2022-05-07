@@ -5,8 +5,11 @@ body {
 .background {
     background-repeat: no-repeat;
     background-image: url('wallpaper7.jpg');
+    
     background-position: center;
     height: 2160px;
+
+    position: relative;
 }
 
 /* centre div "panel" */
@@ -23,6 +26,19 @@ body {
     transform: translate(-50%, -50%);
     width: 95%;
     height: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.card-content {
+    grid-area: 1 / 1 / 6 / 2;
+}
+
+.globe {
+    grid-area: 1 / 2 / 6 / 3;
 }
 
 .card-title {
