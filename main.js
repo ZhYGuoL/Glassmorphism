@@ -62,16 +62,6 @@
 // animate();
 
 
-function parentWidth(elem) {
-    return elem.clientWidth;
-}
-function parentHeight(elem) {
-    return elem.clientHeight;
-}
-
-
-
-
 let Mesh;
 let light;
 
@@ -98,7 +88,7 @@ camera.position.set(5, 0, 0);
 
     balloonLoader.load('/Earth.gltf', (gltf) => {
         Mesh = gltf.scene;
-        Mesh.scale.set(2.5, 2.5, 2.5);
+        Mesh.scale.set(1,1,1);
         scene.add(Mesh);
         Mesh.position.x = 0;
         Mesh.position.y = 0;
