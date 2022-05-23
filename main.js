@@ -72,7 +72,7 @@ renderer.setSize(document.getElementById('globe').clientWidth, document.getEleme
 globe.appendChild(renderer.domElement);
 // make background of scene transparent
 renderer.setClearColor(0x000000, 0);
-const camera = new THREE.PerspectiveCamera(75, parentWidth(document.getElementById('globe')) / parentHeight(document.getElementById('globe')), 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(75, document.getElementById('globe').parentElement.clientWidth / document.getElementById('globe').parentElement.clientHeight, 0.1, 1000);
 const scene = new THREE.Scene();
 camera.position.set(5, 0, 0);
 
