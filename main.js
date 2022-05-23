@@ -81,7 +81,7 @@ camera.position.set(5, 0, 0);
         scene.add(light);
     }
     const dirLight1 = new THREE.DirectionalLight( 0xffffff );
-        dirLight1.position.set( 2, 2, 2 );
+        dirLight1.position.set(1, 1, 1);
         scene.add( dirLight1 );
 
     let balloonLoader = new THREE.GLTFLoader();
