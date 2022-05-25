@@ -72,11 +72,13 @@ renderer.setSize(document.getElementById('globe').clientWidth, document.getEleme
 globe.appendChild(renderer.domElement);
 // make background of scene transparent
 renderer.setClearColor(0x000000, 0);
-const camera = new THREE.PerspectiveCamera(75, document.getElementById('globe').clientWidth / document.getElementById('globe').clientHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(30, document.getElementById('globe').clientWidth / document.getElementById('globe').clientHeight, 0.1, 1000);
 const scene = new THREE.Scene();
 camera.updateProjectionMatrix();
 camera.position.set(5, 0, 0);
-
+console.log(document.getElementById('globe').clientWidth / document.getElementById('globe').clientHeight);
+console.log(document.getElementById('globe').clientWidth);
+console.log(document.getElementById('globe').clientHeight);
     function setLight() {
         light = new THREE.AmbientLight(0xffffff); // soft white light
         scene.add(light);
