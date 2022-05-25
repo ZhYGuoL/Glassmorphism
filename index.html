@@ -10,8 +10,8 @@
             margin: 0;
         }
     </style>
-    <!-- import "menlo regular" font -->
-    <link href='http://fonts.googleapis.com/css?family=Menlo:regular' rel='stylesheet' type='text/css'>
+    <!-- import local "menlo regular" font -->
+    <link href="https://fonts.googleapis.com/css?family=Menlo" rel="stylesheet">
     <title>Glassmorphism</title>
 </head>
 
@@ -33,11 +33,6 @@
     </div>
 </div> -->
 
-<!-- Three.js library -->
-<!-- <script src="https://threejs.org/build/three.min.js"></script>
-<script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js"></script>
-<script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
-<script src="main.js"></script> -->
 
 
 
@@ -45,20 +40,26 @@
 
 <div class="whiteBG">
     <div class="left card">
+        <div class="neu-card noselect">Neumorphism</div>
         <div class="bottom-content"></div>
-        <div class="neu-card">Neumorphism</div>
     </div>
     <div class="middle card">
-        <div class="bottom-content"></div>
-        <div class="neu-card">Three.js</div>
+        <div class="neu-card noselect">Three.js</div>
+        <div class="bottom-content">
+            <div id="globe"></div>
+        </div>
     </div>
     <div class="right card">
+        <div class="neu-card noselect">Lorem Ipsum</div>
         <div class="bottom-content"></div>
-        <div class="neu-card">Lorem Ipsum</div>
     </div>
 </div>
 
-
+<!-- Three.js library -->
+<script src="https://threejs.org/build/three.min.js"></script>
+<script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
+<script src="main.js"></script>
 
 
 </body>
