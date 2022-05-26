@@ -92,10 +92,9 @@ body {
 
 /* if neu-card is clicked, make the neumorphism button depressed */
 .neu-card:active {
-    border-radius: 24px;
     background: #e0e0e0;
     box-shadow: inset 14px 14px 28px #bcbcbc, inset -14px -14px 28px #ffffff;
-    font-size: calc(0.5em + 1.9vw); 
+    font-size: calc(0.5em + 1.95vw); 
 }
 /* centre div "panel" */
 .glass {
