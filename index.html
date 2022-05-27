@@ -15,7 +15,7 @@
     <title>Glassmorphism</title>
 </head>
 
-
+<!-- TODO implement fabric.js; fix globe ratio and fitability-->
 
 <!-- <img src="SidetrackedDaysBG.jpg" style="width:100%"> -->
 
@@ -51,7 +51,9 @@
     </div>
     <div class="right card">
         <div class="neu-card noselect">Fabric.js</div>
-        <div class="bottom-content"></div>
+        <div class="bottom-content" id="canvas-parent">
+            <canvas id="canvas"></canvas>
+        </div>
     </div>
 </div>
 <div>
@@ -62,7 +64,9 @@
 <script src="https://threejs.org/build/three.min.js"></script>
 <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js"></script>
 <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
-<script src="main.js"></script>
+<script src="globe.js"></script>
+<script src="fabric.js"></script>
+<script src="fabricCanvas.js"></script>
 
 
 </body>

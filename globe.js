@@ -77,8 +77,8 @@ const scene = new THREE.Scene();
 camera.updateProjectionMatrix();
 camera.position.set(5, 0, 0);
 console.log(document.getElementById('globe').clientWidth / document.getElementById('globe').clientHeight);
-console.log(document.getElementById('globe').clientWidth);
-console.log(document.getElementById('globe').clientHeight);
+console.log(window.innerWidth);
+console.log(window.innerHeight);
     function setLight() {
         light = new THREE.AmbientLight(0xffffff); // soft white light
         scene.add(light);
