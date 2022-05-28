@@ -121,7 +121,7 @@ console.log(window.innerHeight);
         requestAnimationFrame(animate);
         controls.update();
         if (Mesh && Mesh.rotation) {
-            Mesh.rotation.y -= 0.005;
+            Mesh.rotation.y += 0.005;
         }
         renderer.render(scene, camera);
     }

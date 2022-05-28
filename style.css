@@ -83,13 +83,12 @@ body {
     font-size: calc(0.5em + 2vw); 
     font-weight: bold;
     font-family: 'Montserrat', sans-serif, !important;
+    border:0px;
 }
 
-.neu-card:after {
-    display: block;
-    padding-bottom: 100%;
+.neu-card:focus {
+    outline: none;
 }
-
 /* if neu-card is clicked, make the neumorphism button depressed */
 .neu-card:active {
     background: #e0e0e0;

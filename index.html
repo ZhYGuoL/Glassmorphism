@@ -15,7 +15,8 @@
     <title>Glassmorphism</title>
 </head>
 
-<!-- TODO implement fabric.js; fix globe ratio and fitability-->
+<!-- TODO fix globe ratio and fitability-->
+<!-- TODO make fabric nav-bar button icons and functions-->
 
 <!-- <img src="SidetrackedDaysBG.jpg" style="width:100%"> -->
 
@@ -40,17 +41,18 @@
 
 <div class="whiteBG">
     <div class="left card">
-        <div class="neu-card noselect">Neumorphism</div>
+        <button class="neu-card noselect">Neumorphism</button>
         <div class="bottom-content"></div>
     </div>
     <div class="middle card">
-        <div class="neu-card noselect">Three.js</div>
+        <button class="neu-card noselect">Three.js</button>
         <div class="bottom-content">
             <div id="globe"></div>
         </div>
     </div>
     <div class="right card">
-        <div class="neu-card noselect">Fabric.js</div>
+
+        <button class="neu-card noselect" onclick="window.location.href='/fabricPage/fabric.html'">Fabric.js</button>
         <div class="bottom-content" id="canvas-parent">
             <canvas id="canvas"></canvas>
         </div>
@@ -65,7 +67,7 @@
 <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js"></script>
 <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
 <script src="globe.js"></script>
-<script src="fabric.js"></script>
+<script src="fabricPage/fabric.js"></script>
 <script src="fabricCanvas.js"></script>
 
 

@@ -1,0 +1,9 @@
+{
+    "files.exclude": {
+        "Fonts/": true,
+        ".gitignore": true,
+        "README.md": true,
+        "Earth.gltf": true,
+        ".vscode/": true
+    }
+}
