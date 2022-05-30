@@ -17,12 +17,39 @@
 
 <canvas id="canvas"></canvas>
 
+<script src="fabric.js"></script>
+<!-- import main.js -->
+<script src="fabricCanvas.js"></script>
 
 <!-- bottom nav bar -->
 <div class="bottom-nav">
     <button class="nav-button undo" onclick="undo()">
         <h class="btn-title">Undo</h>
-        <h class="btn-desc">"Z"</h>
+        <!-- <h class="btn-desc">"Z"</h> -->
+    </button>
+    <button class="nav-button delete" onclick="Delete()">
+        <h class="btn-title">Delete</h>
+        <!-- <h class="btn-desc">"D"</h> -->
+    </button>
+    <button class="nav-button btn-circle" onclick="circle()">
+        <h class="btn-title">Circle</h>
+        <!-- <h class="btn-desc">"C"</h> -->
+    </button>
+    <button class="nav-button btn-triangle" onclick="triangle()">
+        <h class="btn-title">Triangle</h>
+        <!-- <h class="btn-desc">"T"</h> -->
+    </button>
+    <button class="nav-button btn-square" onclick="square()">
+        <h class="btn-title">Square</h>
+        <!-- <h class="btn-desc">"S"</h> -->
+    </button>
+    <button class="nav-button btn-pentagon" onclick="pentagon()">
+        <h class="btn-title">Pentagon</h>
+        <!-- <h class="btn-desc">"P"</h> -->
+    </button>
+    <button class="nav-button btn-arrow" onclick="arrow()">
+        <h class="btn-title">Arrow</h>
+        <!-- <h class="btn-desc">"A"</h> -->
     </button>
 
 </div>
@@ -30,7 +57,4 @@
 
 
 
-<script src="fabric.js"></script>
-<!-- import main.js -->
-<script src="fabricCanvas.js"></script>
 </html>

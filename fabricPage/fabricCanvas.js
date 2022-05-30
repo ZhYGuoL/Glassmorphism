@@ -2,8 +2,8 @@ var canvas = new fabric.Canvas('canvas', {width: window.innerWidth, height: wind
 
 // create a rectangle object
 var rect = new fabric.Rect({
-    left: 100,
-    top: 100,
+    left: document.getElementById('canvas').clientWidth / 2,
+    top: document.getElementById('canvas').clientHeight / 2,
     fill: 'red',
     width: 20,
     height: 20
@@ -20,6 +20,17 @@ function onWindowResize() {
 }
 
 
+
+function circle() {
+    var obj = new fabric.Circle({
+        radius: 20,
+        fill: 'green',
+        left: document.getElementById('canvas').clientWidth / 2,
+        top: document.getElementById('canvas').clientHeight / 2
+    });
+
+    canvas.add(obj)
+}
 
 
 
