@@ -38,29 +38,27 @@
 
 
 <!-- !!! NEUMORPHISM V1 -->
+<body>
+    <div class="whiteBG">
+        <div class="left card">
+            <button class="neu-card noselect">Neumorphism</button>
+            <div class="bottom-content"></div>
+        </div>
+        <div class="middle card">
+            <button class="neu-card noselect">Three.js</button>
+            <div class="bottom-content">
+                <div id="globe"></div>
+            </div>
+        </div>
+        <div class="right card">
 
-<div class="whiteBG">
-    <div class="left card">
-        <button class="neu-card noselect">Neumorphism</button>
-        <div class="bottom-content"></div>
-    </div>
-    <div class="middle card">
-        <button class="neu-card noselect">Three.js</button>
-        <div class="bottom-content">
-            <div id="globe"></div>
+            <button class="neu-card noselect" onclick="window.location.href='/fabricPage/fabric.html'">Fabric.js</button>
+            <div class="bottom-content" id="canvas-parent">
+                <canvas id="canvas"></canvas>
+            </div>
         </div>
     </div>
-    <div class="right card">
-
-        <button class="neu-card noselect" onclick="window.location.href='/fabricPage/fabric.html'">Fabric.js</button>
-        <div class="bottom-content" id="canvas-parent">
-            <canvas id="canvas"></canvas>
-        </div>
-    </div>
-</div>
-<div>
-    
-</div>
+</body>
 
 <!-- Three.js library -->
 <script src="https://threejs.org/build/three.min.js"></script>

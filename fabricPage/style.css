@@ -25,6 +25,9 @@ body {
     border-radius: 50%;
     background: #e0e0e0;
     box-shadow:  26px 26px 52px #c1c1c1, -26px -26px 52px #ffffff;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
 }
 
 
